@@ -1,0 +1,61 @@
+.ControlPanel {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.ControlPanel > div {
+  height: 100%;
+  width: 100%;
+}
+
+#graphic-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#graphic-water {
+  position: relative;
+  height: 50%;
+  width: 50%;
+  border: solid 2px #000;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#water {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #0062ff;
+  z-index: -1;
+}
+
+.graphic-control, .graphic-fuel {
+  position: relative;
+  height: 50%;
+  width: 10%;
+  border: solid 2px #000;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.fuel, .control-rod {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.fuel {
+  height: 100%;
+  background-color: green;
+}
+
+.control-rod {
+  background-color: #545454;
+}
